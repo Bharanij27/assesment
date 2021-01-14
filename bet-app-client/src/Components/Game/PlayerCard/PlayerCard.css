@@ -1,0 +1,81 @@
+.players {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  width: inherit;
+  text-align: initial;
+}
+
+.player-stat {
+  display: flex;
+  padding: 1%;
+  flex-direction: row;
+  padding-left: -10%;
+}
+
+.player-stat > span{
+    padding: 5px;
+}
+
+.users-img img {
+  height: 100% !important;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+}
+
+.level {
+  color: #b3b3bf;
+  font-size: x-small;
+  font-weight: bolder;
+}
+
+.card.failed {
+  border: 2px solid #aa0000;
+}
+
+.player-stat .pl-5.col-6 {
+    justify-content: space-around;
+    display: flex;
+}
+
+.result {
+    margin: 0px 20px;
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.success .result{
+  background-color: #005303;
+
+}
+
+.failed .result{
+  background-color: #aa0000;
+}
+
+.card.success {
+  border: 2px solid #005303;
+  transform: scale(1.1);
+}
+
+.selected-player-avatar{
+    position: relative;
+}
+
+.selected-badge {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}

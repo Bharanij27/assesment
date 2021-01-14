@@ -1,0 +1,55 @@
+.sidebar {
+  background-color: #ebf0f2;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dde0e5;
+  min-height: 100vh;
+}
+
+.logo {
+  text-align: center;
+}
+
+.heading {
+  color: #b3b3bf;
+  font-size: small;
+  font-weight: bold;
+  padding-left: 3%;
+}
+
+
+#diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: red;
+  position: relative;
+  top: -50px;
+}
+#diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: red;
+}
+
+.button-container {
+  padding: 20px;
+}
+
+.startbtn {
+  background-color: #2510d7;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.startbtn:disabled {
+  background-color: #7366e5;
+  cursor: not-allowed;
+}

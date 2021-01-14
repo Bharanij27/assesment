@@ -1,0 +1,67 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(#2E183B 35%, black);
+    border-radius: 50%;
+   justify-content: center;
+   border: 4px solid #f2c14a;
+   display:inline-flex;
+   text-align:center;
+   margin:auto;
+}
+
+.num{
+  color: #f2c14a;
+   font-size:750%;
+   font-weight:bolder;
+  margin: auto;
+  position:relative;
+}
+
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+
+  top: 50%;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.fading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.fading::before, .fading::after {
+    background-color: black;
+    content: '';
+    flex-grow: 2;
+    height: 1px;
+    position: relative;
+    top: 4.5em;
+    margin: 2px;
+}
+
+.fading{
+    text-align: center;
+}
