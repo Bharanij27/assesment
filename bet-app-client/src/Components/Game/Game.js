@@ -9,6 +9,8 @@ const Game = () => {
   const bet = localStorage.getItem("placeBet");
 
   useEffect(() => {
+    console.log(players, bet);
+    debugger;
     if (!players || players.length !== 9 || !bet) history.push("/");
     else {
       localStorage.setItem("placeBet", +bet + 1);
@@ -21,7 +23,7 @@ const Game = () => {
   }
   return (
     <div className="game">
-      <div className="container center pt-5">
+      <div className="containers center pt-5">
         <div className="row">
           <ResultConatiner players={players} bet={+bet + 1} />
         <div className="back-btn pt-3">

@@ -25,6 +25,7 @@ const Home = () => {
   useEffect(()=>{
     localStorage.removeItem('players');
     localStorage.removeItem('placeBet')
+    localStorage.removeItem('gameData')
   })
 
   return (

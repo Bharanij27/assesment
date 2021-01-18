@@ -20,7 +20,7 @@ const SideBar = ({ selectedPlayer }) => {
         <div className="m-3 heading ml-5">Playing 9</div>
         <SelectedPlayerList selectedPlayer={selectedPlayer} />
         <div className="button-container">
-          <button className="startbtn" onClick={startGame} >
+          <button className="startbtn" onClick={startGame} disabled={selectedPlayer.length != 9}>
             START
           </button>
         </div>
